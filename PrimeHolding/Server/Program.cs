@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
+using PrimeHolding.Server.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<EmployeeManagementDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PrimeHoldingConnection"));
+});
 
 var app = builder.Build();
 
