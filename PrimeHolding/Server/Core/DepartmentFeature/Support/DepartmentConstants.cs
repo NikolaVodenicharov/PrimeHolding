@@ -1,4 +1,4 @@
-﻿namespace PrimeHolding.Server.Infrastructure.Constants
+﻿namespace PrimeHolding.Server.Core.DepartmentFeature.Support
 {
     public static class DepartmentConstants
     {

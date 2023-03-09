@@ -1,4 +1,6 @@
-﻿namespace PrimeHolding.Server.Infrastructure.Entities
+﻿using PrimeHolding.Server.Core.EmployeeFeature.Entities;
+
+namespace PrimeHolding.Server.Core.WorkTaskFeature.Entities
 {
     public class WorkTask
     {

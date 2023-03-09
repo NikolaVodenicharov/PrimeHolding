@@ -1,4 +1,6 @@
-﻿namespace PrimeHolding.Server.Infrastructure.Entities
+﻿using PrimeHolding.Server.Infrastructure.Entities;
+
+namespace PrimeHolding.Server.Core.EmployeeFeature.Entities
 {
     public class Employee
     {

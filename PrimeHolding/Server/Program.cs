@@ -1,5 +1,11 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
+using PrimeHolding.Server.Core.DepartmentFeature;
+using PrimeHolding.Server.Core.DepartmentFeature.Interfaces;
+using PrimeHolding.Server.Core.EmployeeFeature;
+using PrimeHolding.Server.Core.EmployeeFeature.Interfaces;
+using PrimeHolding.Server.Core.WorkTaskFeature;
+using PrimeHolding.Server.Core.WorkTaskFeature.Interfaces;
 using PrimeHolding.Server.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +14,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IWorkTaskService, WorkTaskService>();
 
 builder.Services.AddDbContext<EmployeeManagementDbContext>(options =>
 {

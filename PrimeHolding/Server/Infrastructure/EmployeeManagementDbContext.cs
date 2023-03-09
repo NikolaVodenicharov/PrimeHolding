@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PrimeHolding.Server.Core.EmployeeFeature.Entities;
 using PrimeHolding.Server.Infrastructure.Entities;
 using System.Reflection;
 

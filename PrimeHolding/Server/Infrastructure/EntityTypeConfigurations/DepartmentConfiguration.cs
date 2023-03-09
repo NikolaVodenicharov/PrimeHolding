@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using PrimeHolding.Server.Infrastructure.Constants;
-using PrimeHolding.Server.Infrastructure.Entities;
+using PrimeHolding.Server.Core.DepartmentFeature.Entities;
+using PrimeHolding.Server.Core.DepartmentFeature.Support;
 
 namespace PrimeHolding.Server.Infrastructure.EntityTypeConfigurations
 {

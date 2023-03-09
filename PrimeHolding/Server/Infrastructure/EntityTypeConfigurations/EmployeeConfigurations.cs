@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using PrimeHolding.Server.Core.EmployeeFeature.Entities;
 using PrimeHolding.Server.Infrastructure.Constants;
-using PrimeHolding.Server.Infrastructure.Entities;
 using System.Reflection.Emit;
 
 namespace PrimeHolding.Server.Infrastructure.EntityTypeConfigurations

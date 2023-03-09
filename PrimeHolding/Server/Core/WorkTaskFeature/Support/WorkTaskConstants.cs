@@ -1,4 +1,4 @@
-﻿namespace PrimeHolding.Server.Infrastructure.Constants
+﻿namespace PrimeHolding.Server.Core.WorkTaskFeature.Support
 {
     public static class WorkTaskConstants
     {
