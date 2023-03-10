@@ -1,6 +1,4 @@
 ﻿namespace PrimeHolding.Server.Core.DepartmentFeature.RequestModels
 {
-    public class CreateDepartmentRequest
-    {
-    }
+    public record CreateDepartmentRequest(string Name);
 }

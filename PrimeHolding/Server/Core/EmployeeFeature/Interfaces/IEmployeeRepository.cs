@@ -7,12 +7,12 @@ namespace PrimeHolding.Server.Core.EmployeeFeature.Interfaces
     {
         Task<EmployeeResponse> CreateAsync(CreateEmployeeRequest createEmployeeRequest);
 
-        Task<EmployeeResponse> GetAsync(Guid id);
+        Task<EmployeeResponse?> GetAsync(Guid id);
 
         Task<ICollection<EmployeeResponse>> GetAllAsync();
 
         Task<EmployeeResponse> UpdateAsync(UpdateEmployeeRequest updateEmployeeRequest);
 
-        Task DeleteAsync(Guid id);
+        Task<EmployeeResponse> DeleteAsync(Guid id);
     }
 }

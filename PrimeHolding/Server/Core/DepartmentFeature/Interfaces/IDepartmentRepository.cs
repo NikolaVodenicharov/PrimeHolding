@@ -1,9 +1,11 @@
 ﻿using PrimeHolding.Server.Core.DepartmentFeature.RequestModels;
+using PrimeHolding.Server.Core.DepartmentFeature.ResponseModels;
 
 namespace PrimeHolding.Server.Core.DepartmentFeature.Interfaces
 {
     public interface IDepartmentRepository
     {
-        Task CreateAsync(CreateDepartmentRequest createDepartmentRequest);
+        Task<DepartmentResponse> CreateAsync(CreateDepartmentRequest createDepartmentRequest);
+        Task<DepartmentResponse?> GetAsync(Guid id);
     }
 }

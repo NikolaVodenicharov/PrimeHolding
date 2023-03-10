@@ -4,7 +4,7 @@ using PrimeHolding.Server.Core.WorkTaskFeature.ResponseModels;
 
 namespace PrimeHolding.Server.Core.WorkTaskFeature
 {
-    public class WorkTaskService : IWorkTaskRepository
+    public class WorkTaskService : IWorkTaskService
     {
         private readonly IWorkTaskRepository _workTaskRepository;
 

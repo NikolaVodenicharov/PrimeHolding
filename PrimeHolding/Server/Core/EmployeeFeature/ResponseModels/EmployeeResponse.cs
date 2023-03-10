@@ -1,5 +1,5 @@
-﻿using PrimeHolding.Server.Core.WorkTaskFeature.ResponseModels;
-using PrimeHolding.Shared.Models.WorkTaskModels;
+﻿using PrimeHolding.Server.Core.DepartmentFeature.ResponseModels;
+using PrimeHolding.Server.Core.WorkTaskFeature.ResponseModels;
 
 namespace PrimeHolding.Server.Core.EmployeeFeature.ResponseModels
 {
@@ -10,6 +10,6 @@ namespace PrimeHolding.Server.Core.EmployeeFeature.ResponseModels
         string PhoneNumber,
         DateTime DateOfBirth,
         decimal MonthlySalary,
-        Guid DepartmentId,
+        DepartmentResponse DepartmentResponse,
         ICollection<WorkTaskResponse> Tasks);
 }

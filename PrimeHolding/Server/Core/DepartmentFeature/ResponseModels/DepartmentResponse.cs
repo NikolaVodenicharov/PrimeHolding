@@ -1,6 +1,9 @@
-﻿namespace PrimeHolding.Server.Core.DepartmentFeature.ResponseModels
+﻿using PrimeHolding.Server.Core.EmployeeFeature.Entities;
+using PrimeHolding.Server.Core.EmployeeFeature.ResponseModels;
+
+namespace PrimeHolding.Server.Core.DepartmentFeature.ResponseModels
 {
-    public class DepartmentResponse
-    {
-    }
+    public record DepartmentResponse(
+        Guid Id,
+        string Name);
 }

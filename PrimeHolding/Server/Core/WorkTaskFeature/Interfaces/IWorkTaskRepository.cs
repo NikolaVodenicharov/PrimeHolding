@@ -9,7 +9,7 @@ namespace PrimeHolding.Server.Core.WorkTaskFeature.Interfaces
     {
         Task<WorkTaskResponse> CreateAsync(CreateWorkTaskRequest createWorkTaskRequest);
 
-        Task<WorkTaskResponse> GetAsync(Guid id);
+        Task<WorkTaskResponse?> GetAsync(Guid id);
 
         Task<ICollection<WorkTaskResponse>> GetAllAsync();
 

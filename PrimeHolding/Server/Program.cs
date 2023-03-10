@@ -7,6 +7,7 @@ using PrimeHolding.Server.Core.EmployeeFeature.Interfaces;
 using PrimeHolding.Server.Core.WorkTaskFeature;
 using PrimeHolding.Server.Core.WorkTaskFeature.Interfaces;
 using PrimeHolding.Server.Infrastructure;
+using PrimeHolding.Server.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IWorkTaskService, WorkTaskService>();
+
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IWorkTaskRepository, WorkTaskRepository>();
 
 builder.Services.AddDbContext<EmployeeManagementDbContext>(options =>
 {

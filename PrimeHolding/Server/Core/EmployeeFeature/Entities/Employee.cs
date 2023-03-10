@@ -1,4 +1,5 @@
-﻿using PrimeHolding.Server.Infrastructure.Entities;
+﻿using PrimeHolding.Server.Core.DepartmentFeature.Entities;
+using PrimeHolding.Server.Core.WorkTaskFeature.Entities;
 
 namespace PrimeHolding.Server.Core.EmployeeFeature.Entities
 {
