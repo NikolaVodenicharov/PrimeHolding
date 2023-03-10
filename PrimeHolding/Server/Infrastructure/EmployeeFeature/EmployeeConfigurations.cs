@@ -4,7 +4,7 @@ using PrimeHolding.Server.Core.EmployeeFeature.Entities;
 using PrimeHolding.Server.Core.EmployeeFeature.Support;
 using System.Reflection.Emit;
 
-namespace PrimeHolding.Server.Infrastructure.EntityTypeConfigurations
+namespace PrimeHolding.Server.Infrastructure.EmployeeFeature
 {
     public class EmployeeConfigurations : IEntityTypeConfiguration<Employee>
     {
@@ -38,7 +38,7 @@ namespace PrimeHolding.Server.Infrastructure.EntityTypeConfigurations
             builder
                 .Property(e => e.MonthlySalary)
                 .IsRequired()
-                .HasPrecision(18,2);
+                .HasPrecision(18, 2);
 
             builder
                 .HasOne(e => e.Department)

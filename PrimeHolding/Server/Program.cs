@@ -7,6 +7,7 @@ using PrimeHolding.Server.Core.EmployeeFeature.Interfaces;
 using PrimeHolding.Server.Core.WorkTaskFeature;
 using PrimeHolding.Server.Core.WorkTaskFeature.Interfaces;
 using PrimeHolding.Server.Infrastructure;
+using PrimeHolding.Server.Infrastructure.DepartmentFeature;
 using PrimeHolding.Server.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);

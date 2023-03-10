@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PrimeHolding.Server.Core.DepartmentFeature.Entities;
 using PrimeHolding.Server.Core.DepartmentFeature.Support;
 
-namespace PrimeHolding.Server.Infrastructure.EntityTypeConfigurations
+namespace PrimeHolding.Server.Infrastructure.DepartmentFeature
 {
     public class DepartmentConfiguration : IEntityTypeConfiguration<Department>
     {

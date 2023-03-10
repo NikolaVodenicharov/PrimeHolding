@@ -6,7 +6,7 @@ using PrimeHolding.Server.Core.DepartmentFeature.ResponseModels;
 using PrimeHolding.Server.Core.DepartmentFeature.Support;
 using PrimeHolding.Server.Core.EmployeeFeature.ResponseModels;
 
-namespace PrimeHolding.Server.Infrastructure.Repositories
+namespace PrimeHolding.Server.Infrastructure.DepartmentFeature
 {
     public class DepartmentRepository : IDepartmentRepository
     {

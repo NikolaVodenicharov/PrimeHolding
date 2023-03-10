@@ -8,7 +8,7 @@ using PrimeHolding.Server.Core.EmployeeFeature.Support;
 using PrimeHolding.Server.Core.WorkTaskFeature.RequestModels;
 using PrimeHolding.Server.Core.WorkTaskFeature.ResponseModels;
 
-namespace PrimeHolding.Server.Infrastructure.Repositories;
+namespace PrimeHolding.Server.Infrastructure.EmployeeFeature;
 
 public class EmployeeRepository : IEmployeeRepository
 {
@@ -16,7 +16,7 @@ public class EmployeeRepository : IEmployeeRepository
     private readonly IDepartmentRepository _departmentRepository;
 
     public EmployeeRepository(
-        EmployeeManagementDbContext dbContext, 
+        EmployeeManagementDbContext dbContext,
         IDepartmentRepository departmentRepository)
     {
         _dbContext = dbContext;
@@ -28,11 +28,11 @@ public class EmployeeRepository : IEmployeeRepository
         var employee = new Employee()
         {
             FullName = createEmployeeRequest.FullName,
-            Email= createEmployeeRequest.Email,
-            PhoneNumber= createEmployeeRequest.PhoneNumber,
-            DateOfBirth= createEmployeeRequest.DateOfBirth,
-            MonthlySalary= createEmployeeRequest.MonthlySalary,
-            DepartmentId= createEmployeeRequest.DepartmentId
+            Email = createEmployeeRequest.Email,
+            PhoneNumber = createEmployeeRequest.PhoneNumber,
+            DateOfBirth = createEmployeeRequest.DateOfBirth,
+            MonthlySalary = createEmployeeRequest.MonthlySalary,
+            DepartmentId = createEmployeeRequest.DepartmentId
         };
 
         var result = await _dbContext.Employees.AddAsync(employee);
@@ -42,7 +42,7 @@ public class EmployeeRepository : IEmployeeRepository
         var departmentResponse = await _departmentRepository.GetAsync(createEmployeeRequest.DepartmentId);
 
         var employeeResponse = new EmployeeResponse(
-            employee.Id, 
+            employee.Id,
             employee.FullName,
             employee.Email,
             employee.PhoneNumber,
@@ -131,5 +131,5 @@ public class EmployeeRepository : IEmployeeRepository
 
         return employeeResponse;
     }
-        
+
 }

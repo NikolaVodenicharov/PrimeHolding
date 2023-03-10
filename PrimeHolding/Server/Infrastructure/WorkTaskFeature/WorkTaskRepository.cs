@@ -5,7 +5,7 @@ using PrimeHolding.Server.Core.WorkTaskFeature.RequestModels;
 using PrimeHolding.Server.Core.WorkTaskFeature.ResponseModels;
 using PrimeHolding.Server.Core.WorkTaskFeature.Support;
 
-namespace PrimeHolding.Server.Infrastructure.Repositories
+namespace PrimeHolding.Server.Infrastructure.WorkTaskFeature
 {
     public class WorkTaskRepository : IWorkTaskRepository
     {
@@ -88,7 +88,7 @@ namespace PrimeHolding.Server.Infrastructure.Repositories
             if (workTask == null)
             {
                 return;
-            }    
+            }
 
             _dbContext.WorkTasks.Remove(workTask);
 
