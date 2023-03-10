@@ -110,11 +110,17 @@ public class EmployeeRepository : IEmployeeRepository
     {
         var employee = await _dbContext
             .Employees
+            .Include(e => e.WorkTasks)
             .FirstOrDefaultAsync(e => e.Id == id);
 
         if (employee == null)
         {
             return null;
+        }
+
+        foreach (var workTask in employee.WorkTasks)
+        {
+            workTask.AssigneeId = Guid.Empty;
         }
 
         _dbContext.Employees.Remove(employee);
