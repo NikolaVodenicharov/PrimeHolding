@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeHolding.Server", "PrimeHolding\Server\PrimeHolding.Server.csproj", "{03A940F6-418B-4D11-A126-7562B6054C88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeHolding.Server", "PrimeHolding\Server\PrimeHolding.Server.csproj", "{03A940F6-418B-4D11-A126-7562B6054C88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeHolding.Client", "PrimeHolding\Client\PrimeHolding.Client.csproj", "{8B1E88BA-A8D7-4C52-B7F2-5527960B7855}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeHolding.Client", "PrimeHolding\Client\PrimeHolding.Client.csproj", "{8B1E88BA-A8D7-4C52-B7F2-5527960B7855}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeHolding.Shared", "PrimeHolding\Shared\PrimeHolding.Shared.csproj", "{4B6C9693-0664-4584-8B81-53F40D6DBBAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeHolding.Shared", "PrimeHolding\Shared\PrimeHolding.Shared.csproj", "{4B6C9693-0664-4584-8B81-53F40D6DBBAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
