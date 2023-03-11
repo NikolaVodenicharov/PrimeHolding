@@ -8,7 +8,8 @@ using PrimeHolding.Server.Core.WorkTaskFeature;
 using PrimeHolding.Server.Core.WorkTaskFeature.Interfaces;
 using PrimeHolding.Server.Infrastructure;
 using PrimeHolding.Server.Infrastructure.DepartmentFeature;
-using PrimeHolding.Server.Infrastructure.Repositories;
+using PrimeHolding.Server.Infrastructure.EmployeeFeature;
+using PrimeHolding.Server.Infrastructure.WorkTaskFeature;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
@@ -36,6 +40,9 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseWebAssemblyDebugging();
+
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 else
 {
@@ -50,7 +57,6 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 
 app.MapRazorPages();
 app.MapControllers();
